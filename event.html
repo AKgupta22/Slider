@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .center {
+            width: 90vh;
+            margin: auto;
+        }
+
+        p {
+            padding: 10px;
+            background-color: green;
+            color: white;
+            text-align: justify;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            width: 100%;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="center">
+            <button onclick="fun()">Change</button>
+            <p id="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint perferendis eum natus
+                excepturi nemo alias. Omnis ut numquam aliquam, necessitatibus sequi cum magnam earum repudiandae amet,
+                voluptatum cupiditate obcaecati dolor similique impedit quis quibusdam ad modi nemo, autem quas. Error
+                tempora nam sint eum illo voluptatum similique totam quam.</p>
+        </div>
+    </div>
+
+    <script>
+        var msg = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint perferendis eum natus excepturi nemo alias. Omnis ut numquam aliquam, necessitatibus sequi cum magnam earum repudiandae amet, voluptatum cupiditate obcaecati dolor similique impedit quis quibusdam ad modi nemo, autem quas. Error tempora nam sint eum illo voluptatum similique totam quam."
+        var msg1 = "This Para is changed by Button"
+        var ch = 1
+        function fun() {
+            var p = document.getElementById("p")
+            if (ch == 1) {
+                p.innerHTML = msg1
+                ch = 2
+            }
+            else {
+                p.innerHTML = msg
+                ch = 1
+            }
+        }
+    </script>
+</body>
+
+
+</html>

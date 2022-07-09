@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin-top: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.center {
+    width: 70vw;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin-top: 10px;
+    padding: 25px 0px;
+    width: 33%;
+    background-color: #ef3f49;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f84d55;
+}
+
+button i {
+    font-size: 20px;
+}
